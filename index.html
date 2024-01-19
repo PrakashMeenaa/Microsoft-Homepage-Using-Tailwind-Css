@@ -4,29 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <link rel="ICON" href="images/favicon.ico" type="image/x-icon" />
+    <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
   </head>
   <body>
     <div class="container">
-      <div class="nav w-screen flex justify-between">
-        <div class="left p-1 h-max flex flex-row">
-          <div class="flex flex-col w-[45px] h-max gap-y-1 p-3">
+      <div class="nav w-screen flex justify-between lg:pl-10 lg:h-12">
+        <div class="left p-1 h-max self-center flex flex-row lg:order-2">
+          <div class="flex flex-col w-[45px] h-max gap-y-1 p-3 lg:hidden">
             <hr class="h-0.5 bg-black" />
             <hr class="h-0.5 bg-black" />
             <hr class="h-0.5 bg-black" />
           </div>
-          <div class="searchicon self-center">
+          <div class="searchicon flex self-center gap-x-5 pt-1 lg:hidden">
             <img class="w-6 min-w-6" src="images/searhicon.webp" alt="" />
           </div>
         </div>
-        <div class="mircosofticon self-center">
-          <img
-            class="h-6 min-h-6 min-w-max"
-            src="images/microsoftlogo.png"
-            alt=""
-          />
+        <div class="middlenav flex gap-x-6">
+          <div class="mircosofticon self-center">
+            <img
+              class="h-6 min-h-6 min-w-max"
+              src="images/microsoftlogo.png"
+              alt=""
+            />
+          </div>
+          <div class="hidden self-center gap-x-5 text-sm lg:flex">
+            <div>Microsoft</div>
+            <div>365Teams</div>
+            <div>Copilot</div>
+            <div>Windows</div>
+            <div>365Teams</div>
+            <div class="hidden xl:flex">Copilot</div>
+          </div>
         </div>
-        <div class="righ flex flex-row self-center space-x-10 px-5">
+        <div class="righ lg:order-3 flex flex-row self-center space-x-5 px-5">
+          <div class="searchicon hidden self-center pt-1 lg:flex">
+            <div class="text-sm mr-5">All Microsoft</div>
+            <img
+              class="w-6 lg:min-w-6 lg:min-h-max"
+              src="images/searhicon.webp"
+              alt=""
+            />
+          </div>
           <div>
             <img class="w-6 min-w-6" src="images/cart.webp" alt="" />
           </div>
@@ -35,16 +54,52 @@
           </div>
         </div>
       </div>
-      <div class="middle w-screen">
-        <div class="info py-5 flex self-center justify-center p-5 w-screen text-center bg-[#0167b8] text-white">
+      <div class="middle max-w-screen">
+        <div
+          class="info py-5 flex self-center justify-center p-5 w-screen text-center bg-[#0167b8] text-white lg:absolute"
+        >
           "Require assistance with Microsoft 365? Call 0008004402127 to inquire
           or make a purchase."
           <div class="self-center w-max ml-3">></div>
         </div>
-        <div class="bg-[#f2f2f2] pl-1">
-          <img src="images/Highlight-Surface-Pro-9-M1-Family-02-1_VP2-859x540.avif" alt="">
+        <div class="bg-[#f2f2f2] pl-1 w-screen  items-center flex  flex-row">
+          <img class=" object-cover lg:object-none 2xl:-mr-10 2xl:w-5/6"
+            src="images/Highlight-Surface-Pro-9-M1-Family-02-1_VP2-859x540.avif"
+            alt=""
+          />
+           <div class="space-y-6 p-10 hidden  2xl:flex flex-col ">
+            <div class="font-semibold font-sans text-3xl ">Surface Pro 9</div>
+            <div>
+              Tablet versatility and laptop power — all in one ultra-portable
+              device
+            </div>
+            <button class="bg-[#0167b8] border-0 rounded-sm text-white py-2 px-3">
+              Learn more
+            </button>
+          </div>
+        </div>
+        <div class="lg:px-5 w-screen">
+        <div
+          class="space-y-6 p-10  shadow-lg rounded-sm  lg:translate-y-[-40px] flex flex-col flex-nowrap bg-white 2xl:hidden"
+        >
+          <div class="font-semibold font-sans text-3xl">Surface Pro 9</div>
+          <div>
+            Tablet versatility and laptop power — all in one ultra-portable
+            device
+          </div>
+          <button class="bg-[#0167b8] border-0 w-max rounded-sm text-white py-2 px-3">
+            Learn more
+          </button>
+        </div>
+      </div>
+        <div class=" linklist mt-20 flex flex-wrap justify-center -space-x-16 w-screen font-semibold text-[#0067b8] underline ">
+          <button class=" flex flex-col items-center w-max p-12 " ><img class="w-10 h-10 mb-3" src="images/Link-List-Icons-Microsoft-365 (1).svg" alt="">Choose your Microsoft 365</button>
+          <button class="flex flex-col items-center w-max  p-12" > <img class="w-10 h-10 mb-3" src="images/Link-List-Icons-Xbox-Games-Consoles.svg" alt="">Shop Xbox games and consoles</button>
+          <button class="flex flex-col items-center w-max p-12" ><img class="w-10 h-10 mb-3" src="images/Link-List-Icons-Microsoft-365.svg" alt="">Get Windows 11</button>
+          <button class="flex flex-col items-center w-max p-12" ><img class="w-10 h-10 mb-3" src="images/Link-List-Icons-Surface-Devices.svg" alt="">Explore Surface devices</button>
         </div>
       </div>
     </div>
   </body>
 </html>
+ 
